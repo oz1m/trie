@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define ALPHABET_SIZE 26
 #define MAX_WORD_LENGTH 50
 
 typedef struct Node {
-  char last;
+  bool last;
   struct Node *childs[ALPHABET_SIZE];
 } Node;
 
